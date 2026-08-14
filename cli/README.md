@@ -20,6 +20,13 @@ npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/v
 vansrouter start
 ```
 
+**Update to latest version:**
+
+```bash
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz --force
+vansrouter restart
+```
+
 🎉 Dashboard opens at `http://localhost:20128`
 
 **2. Connect a FREE provider (no signup needed):**

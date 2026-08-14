@@ -26,7 +26,16 @@ vansrouter start
 
 🎉 Dashboard automatically opens at `http://localhost:20128`
 
-### 2. Run from Source (Local Development)
+### 2. Updating to Latest Version
+
+To update your globally installed CLI to the latest release:
+
+```bash
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz --force
+vansrouter restart
+```
+
+### 3. Run from Source (Local Development)
 
 ```bash
 # Install dependencies
@@ -36,7 +45,7 @@ pnpm install
 pnpm dev
 ```
 
-### 3. Version Bump & Release Workflow
+### 4. Version Bump & Release Workflow
 
 This repository uses automated release workflows. Always bump the version before pushing:
 
