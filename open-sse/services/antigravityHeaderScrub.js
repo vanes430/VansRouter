@@ -51,7 +51,6 @@ export function scrubProxyAndFingerprintHeaders(headers) {
     }
     cleaned[key] = value;
   }
-  cleaned["Accept-Encoding"] = "gzip, deflate, br";
   if (authorizationValue !== undefined) {
     cleaned["Authorization"] = authorizationValue;
   }
