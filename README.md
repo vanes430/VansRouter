@@ -7,23 +7,60 @@
   
   **Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers & 100+ Models.**
   
-  [![npm](https://img.shields.io/npm/v/vansrouter.svg)](https://www.npmjs.com/package/vansrouter)
-  [![Downloads](https://img.shields.io/npm/dm/vansrouter.svg)](https://www.npmjs.com/package/vansrouter)
-  [![Docker Pulls](https://img.shields.io/docker/pulls/vanszs/vansrouter.svg?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/vanszs/vansrouter)
-  [![GHCR](https://img.shields.io/badge/GHCR-vanszs%2Fvansrouter-blue?logo=github)](https://github.com/Vanszs/VansRouter/pkgs/container/vansrouter)
-  [![License](https://img.shields.io/npm/l/vansrouter.svg)](https://github.com/Vanszs/VansRouter/blob/main/LICENSE)
+  [![GitHub Release](https://img.shields.io/github/v/release/vanes430/VansRouter?logo=github)](https://github.com/vanes430/VansRouter/releases)
+  [![License](https://img.shields.io/github/license/vanes430/VansRouter)](https://github.com/vanes430/VansRouter/blob/main/LICENSE)
 
-<a href="https://trendshift.io/repositories/22628" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22628" alt="vanszs%2Fvansrouter | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-[🚀 Quick Start](#-quick-start) • [💡 Features](#-key-features) • [📖 Setup](#-setup-guide) • [🌐 Website](https://9router.com)
-
-[🇻🇳 Tiếng Việt](./i18n/README.vi.md) • [🇨🇳 中文](./i18n/README.zh-CN.md) • [🇯🇵 日本語](./i18n/README.ja-JP.md) • [🇷🇺 Русский](./i18n/README.ru.md) • [🇹🇭 ไทย](./i18n/README.th.md) • [🇮🇷 فارسی](./i18n/README.fa_IR.md)
-
+  [🚀 Quick Start](#-quick-start) • [💡 Features](#-key-features) • [📖 Setup](#-setup-guide)
 </div>
 
 ---
 
-## 🤔 Why VansRouter?
+## ⚡ Quick Start & Installation
+
+### 1. Global Installation (GitHub Release)
+
+```bash
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz
+vansrouter start
+```
+
+🎉 Dashboard automatically opens at `http://localhost:20128`
+
+### 2. Run from Source (Local Development)
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run dev server
+pnpm dev
+```
+
+### 3. Version Bump & Release Workflow
+
+This repository uses automated release workflows. Always bump the version before pushing:
+
+```bash
+npm run patch   # Small fixes / bugfix (e.g. 0.9.99 -> 0.9.100)
+npm run minor   # New features / minor bump (e.g. 0.9.100 -> 0.10.0)
+
+# Commit & Push
+git add .
+git commit -m "feat: your update"
+git push origin main
+
+# Trigger GitHub Release
+git tag v0.9.100
+git push origin v0.9.100
+```
+
+---
+
+## 🛠️ Key Custom Changes in this Version
+- **Single-File Release Workflow** ([`.github/workflows/release.yml`](.github/workflows/release.yml)) — Builds standalone CLI bundle and publishes directly to GitHub Releases.
+- **Zero NPMjs Account Dependency** — Distributes `.tgz` tarball assets directly via GitHub Releases.
+- **Git Push Version Guard** — Automatically ensures version is bumped before allowing `git push`.
+- **Global Anti Co-Authored Hook** — Prevents any co-authored commit messages.
 
 **Stop wasting money, tokens and hitting limits:**
 
@@ -115,22 +152,13 @@ Result: Never stop coding, minimal cost + 20-40% token savings via RTK
 
 ---
 
-## ⚡ Quick Start
+## 🔌 Connecting Providers & CLI Tools
 
-**1. Install globally:**
-
-```bash
-npm install -g vansrouter
-vansrouter
-```
-
-🎉 Dashboard opens at `http://localhost:20128`
-
-**2. Connect a FREE provider (no signup needed):**
+**1. Connect a FREE provider (no signup needed):**
 
 Dashboard → Providers → Connect **Kiro AI** (free Claude unlimited) or **OpenCode Free** (no auth) → Done!
 
-**3. Use in your CLI tool:**
+**2. Use in your CLI tool:**
 
 ```
 Claude Code/Codex/OpenClaw/Cursor/Cline Settings:
@@ -138,30 +166,6 @@ Claude Code/Codex/OpenClaw/Cursor/Cline Settings:
   API Key: [copy from dashboard]
   Model: kr/claude-sonnet-4.5
 ```
-
-**That's it!** Start coding with FREE AI models.
-
-**Alternative: run from source (this repository):**
-
-This repository package is private (`9router-app`), so source/Docker execution is the expected local development path.
-
-```bash
-cp .env.example .env
-npm install
-PORT=20128 NEXT_PUBLIC_BASE_URL=http://localhost:20128 npm run dev
-```
-
-Production mode:
-
-```bash
-npm run build
-PORT=20128 HOSTNAME=0.0.0.0 NEXT_PUBLIC_BASE_URL=http://localhost:20128 npm run start
-```
-
-Default URLs:
-
-- Dashboard: `http://localhost:20128/dashboard`
-- OpenAI-compatible API: `http://localhost:20128/v1`
 
 ---
 

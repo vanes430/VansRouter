@@ -4,58 +4,21 @@
 
 **Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers & 100+ Models.**
 
-[![npm](https://img.shields.io/npm/v/vansrouter.svg)](https://www.npmjs.com/package/vansrouter)
-[![Downloads](https://img.shields.io/npm/dm/vansrouter.svg)](https://www.npmjs.com/package/vansrouter)
-[![Docker Pulls](https://img.shields.io/docker/pulls/vanszs/vansrouter.svg?logo=docker&label=Docker%20pulls)](https://hub.docker.com/r/vanszs/vansrouter)
-[![GHCR](https://img.shields.io/badge/GHCR-Vanszs%2FVansRouter-blue?logo=github)](https://github.com/Vanszs/VansRouter/pkgs/container/VansRouter)
-[![License](https://img.shields.io/npm/l/vansrouter.svg)](https://github.com/Vanszs/VansRouter/blob/main/LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/vanes430/VansRouter?logo=github)](https://github.com/vanes430/VansRouter/releases)
+[![License](https://img.shields.io/github/license/vanes430/VansRouter)](https://github.com/vanes430/VansRouter/blob/main/LICENSE)
 
-<a href="https://trendshift.io/repositories/22628" target="_blank"><img src="https://trendshift.io/api/badge/repositories/22628" alt="decolua%2F9router | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-[🌐 Website](https://vansrouter.com) • [📖 Full Docs](https://github.com/Vanszs/VansRouter)
-
----
-
-## 🤔 Why VansRouter?
-
-**Stop wasting money, tokens and hitting limits:**
-
-- ❌ Subscription quota expires unused every month
-- ❌ Rate limits stop you mid-coding
-- ❌ Tool outputs (git diff, grep, ls...) burn tokens fast
-- ❌ Expensive APIs ($20-50/month per provider)
-
-**VansRouter solves this:**
-
-- ✅ **RTK Token Saver** - Auto-compress tool_result, save 20-40% tokens
-- ✅ **Maximize subscriptions** - Track quota, use every bit before reset
-- ✅ **Auto fallback** - Subscription → Cheap → Free, zero downtime
-- ✅ **Multi-account** - Round-robin between accounts per provider
-- ✅ **Universal** - Works with any OpenAI/Claude-compatible CLI
+[📖 Full Docs](https://github.com/vanes430/VansRouter)
 
 ---
 
 ## ⚡ Quick Start
 
-**Option 1 — npm (recommended for desktop):**
+**Install globally (GitHub Release):**
 
 ```bash
-npm install -g vansrouter
-vansrouter
-
-# Or run directly with npx
-npx vansrouter
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz
+vansrouter start
 ```
-
-**Option 2 — Docker (server/VPS):**
-
-```bash
-docker run -d --name vansrouter -p 20128:20128 \
-  -v "$HOME/.9router:/app/data" -e DATA_DIR=/app/data \
-  ghcr.io/vanszs/vansrouter:latest
-```
-
-Published images: [Docker Hub](https://hub.docker.com/r/vanszs/vansrouter) • [GHCR](https://github.com/Vanszs/VansRouter/pkgs/container/VansRouter) (multi-platform amd64/arm64).
 
 🎉 Dashboard opens at `http://localhost:20128`
 
@@ -110,9 +73,8 @@ Any tool supporting OpenAI/Claude-compatible API works.
 
 Full docs, advanced setup, video tutorials & development guide:
 
-- **GitHub**: https://github.com/Vanszs/VansRouter
-- **Full README**: https://github.com/Vanszs/VansRouter/blob/main/README.md
-- **Website**: https://vansrouter.com
+- **GitHub**: https://github.com/vanes430/VansRouter
+- **Full README**: https://github.com/vanes430/VansRouter/blob/main/README.md
 
 ---
 
