@@ -20,7 +20,7 @@
 ### 1. Global Installation (GitHub Release)
 
 ```bash
-npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter.tgz
 vansrouter start
 ```
 
@@ -31,7 +31,7 @@ vansrouter start
 To update your globally installed CLI to the latest release:
 
 ```bash
-npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter-0.9.100.tgz --force
+npm install -g https://github.com/vanes430/VansRouter/releases/latest/download/vansrouter.tgz --force
 vansrouter restart
 ```
 

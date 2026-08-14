@@ -47,6 +47,9 @@ jobs:
           cd cli
           npm run build
           npm pack --pack-destination ../dist-pkg
+          cd ..
+          # Also create generic vansrouter.tgz for permanent latest download URL
+          cp dist-pkg/vansrouter-*.tgz dist-pkg/vansrouter.tgz
 
       - name: Get version from package.json
         id: pkg_version
